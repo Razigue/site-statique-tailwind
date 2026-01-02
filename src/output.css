@@ -370,6 +370,9 @@
   .bg-\[url\(\/assets\/images\/img-course\.png\)\] {
     background-image: url(/assets/images/img-course.png);
   }
+  .bg-\[url\(assets\/images\/img-course\.png\)\] {
+    background-image: url(assets/images/img-course.png);
+  }
   .from-pink-600 {
     --tw-gradient-from: var(--color-pink-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
