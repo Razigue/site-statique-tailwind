@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+    --montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+}
