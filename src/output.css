@@ -367,6 +367,9 @@
   .bg-\[linear-gradient\(94\.01deg\,rgba\(200\,30\,45\,0\.85\)_3\.11\%\,rgba\(20\,140\,90\,0\.85\)_98\.45\%\)\,url\(\'\/assets\/images\/author\.png\'\)\] {
     background-image: linear-gradient(94.01deg,rgba(200,30,45,0.85) 3.11%,rgba(20,140,90,0.85) 98.45%),url('/assets/images/author.png');
   }
+  .bg-\[url\(\.\/assets\/images\/img-course\.png\)\] {
+    background-image: url(./assets/images/img-course.png);
+  }
   .bg-\[url\(\/assets\/images\/img-course\.png\)\] {
     background-image: url(/assets/images/img-course.png);
   }
