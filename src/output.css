@@ -720,6 +720,9 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\.\.\/assets\/images\/hero_mobile\.png\'\)\] {
+    background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('../assets/images/hero_mobile.png');
+  }
   .bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\/assets\/images\/hero_mobile\.png\'\)\] {
     background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('/assets/images/hero_mobile.png');
   }
@@ -1543,6 +1546,11 @@
   .md\:rounded-2xl {
     @media (width >= 48rem) {
       border-radius: var(--radius-2xl);
+    }
+  }
+  .md\:bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\.\.\/assets\/images\/hero_desktop\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('../assets/images/hero_desktop.png');
     }
   }
   .md\:bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\/assets\/images\/hero_desktop\.png\'\)\] {
