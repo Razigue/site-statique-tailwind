@@ -25,10 +25,13 @@
         <title>Klivio</title>
     </head>
     <body>
-        <header class="h-20 bg-red-700 flex justify-center">
-            <div class="flex flex-row items-center gap-56">
-                <div>
-                    <a>
+        <header
+            style="z-index: 9999"
+            class="h-20 bg-neutral-950/30 backdrop-blur-3xl flex justify-center md:justify-evenly fixed top-0 inset-x-0 z10"
+        >
+            <div class="flex flex-row items-center gap-56 md:gap-[31rem]">
+                <div class="flex items-center gap-4">
+                    <a class="inline-flex items-center">
                         <img
                             src="resources/logo.png"
                             alt="Logo Klivio"
@@ -39,11 +42,21 @@
                 </div>
 
                 <div class="hidden md:flex">
-                    <input type="text" placeholder="Rechercher" />
+                    <input
+                        type="text"
+                        placeholder="Rechercher"
+                        class="w-72 rounded-2xl bg-gray-700/5 border border-neutral-200 p-3 text-white placeholder:text-gray-300 focus:border-white"
+                    />
                 </div>
-                <div class="hidden md:flex">
-                    <a href="">Connexion</a>
-                    <a href="">Inscription</a>
+                <div class="hidden md:flex md:gap-12">
+                    <a href="" class="text-gray-200 hover:text-white mt-3"
+                        >Connexion</a
+                    >
+                    <a
+                        href=""
+                        class="p-3 rounded-2xl text-gray-200 hover:text-white"
+                        >Inscription</a
+                    >
                 </div>
                 <div class="md:hidden">
                     <img src="assets/images/Icon.svg" alt="menu burger" />
@@ -52,43 +65,45 @@
         </header>
         <main>
             <div
-                class="m-0 flex flex-col text-center justify-around gap-7 h-80 bg-[linear-gradient(94.01deg,rgba(200,30,45,0.85)_3.11%,rgba(20,140,90,0.85)_98.45%),url('/assets/images/author.png')] bg-cover bg-center"
+                class="pt-20 m-0 flex flex-col text-center justify-around gap-7 h-100 bg-[linear-gradient(94.01deg,rgba(2,6,23,0.85)_3.11%,rgba(2,6,23,0.60)_45%,rgba(2,6,23,0.85)_98.45%),radial-gradient(900px_circle_at_30%_30%,rgba(217,70,239,0.35),transparent_55%),radial-gradient(900px_circle_at_70%_60%,rgba(34,211,238,0.25),transparent_55%),url('/assets/images/hero_mobile.png')] md:bg-[linear-gradient(94.01deg,rgba(2,6,23,0.85)_3.11%,rgba(2,6,23,0.60)_45%,rgba(2,6,23,0.85)_98.45%),radial-gradient(900px_circle_at_30%_30%,rgba(217,70,239,0.35),transparent_55%),radial-gradient(900px_circle_at_70%_60%,rgba(34,211,238,0.25),transparent_55%),url('/assets/images/hero_desktop.png')] bg-cover bg-center"
             >
-                <h1 class="text-white">KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
+                <h1 class="text-white text-2xl md:text-4xl">
+                    KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION
+                </h1>
 
-                <p class="text-white">
+                <p class="text-white md:text-lg">
                     LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL
                 </p>
 
                 <button
-                    href="idk yet"
-                    target="_blank"
-                    class="h-10 w-36 bg-red-600 self-center rounded-4xl"
+                    class="h-10 w-36 text-gray-400 hover:text-white bg-white/10 border border-white/20 hover:bg-white/10 hover:border-white/20 transition self-center rounded-4xl"
                 >
                     En savoir plus
                 </button>
             </div>
             <!--bloc1-->
-            <div
-                class="flex flex-col items-center bg-gradient-to-r from-pink-700 to-teal-400"
-            >
-                <div class="flex flex-col items-center mt-8 w-64">
-                    <h2 class="mb-4">Les formations populaires</h2>
+            <div class="flex flex-col items-center bg-neutral-900 text-white">
+                <div
+                    class="flex flex-col items-center mt-8 w-72 md:w-full md:max-w-6xl"
+                >
+                    <h2 class="mb-4 text-white">Les formations populaires</h2>
                     <div
-                        class="flex flex-col items-center md:flex-row md:items-stretch md:gap-36"
+                        class="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center md:gap-8"
                     >
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col mt-4 mb-4">
+                            <div class="flex flex-col mt-4 mb-4 md:min-h-40">
                                 <h3>Parler en public</h3>
                                 <p>Sonia lefèvre | Coach prise de parole</p>
                                 <div class="flex">
@@ -120,18 +135,20 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col mt-4 mb-4">
+                            <div class="flex flex-col mt-4 mb-4 md:min-h-40">
                                 <h3>Gérer le stress</h3>
                                 <p>Lucie Garnier | Formatrice</p>
 
@@ -161,18 +178,20 @@
                                 <p>Apprenez à rester serein face aux défis</p>
                             </div>
                         </div>
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col mt-4 mb-4">
+                            <div class="flex flex-col mt-4 mb-4 md:min-h-40">
                                 <h3>Travailler en équipe</h3>
                                 <p>David Moreau | Expert</p>
                                 <div class="flex">
@@ -200,18 +219,20 @@
                                 <p>Collaborez efficacement, même à distance</p>
                             </div>
                         </div>
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col mt-4 mb-4">
+                            <div class="flex flex-col mt-4 mb-4 md:min-h-40">
                                 <h3>Gérer son temps</h3>
                                 <p>Claire Dumas | Coach organisation</p>
                                 <div class="flex">
@@ -244,32 +265,41 @@
                         </div>
                     </div>
                     <div>
-                        <button class="m-4">Voir plus de formation</button>
+                        <button
+                            class="m-4 text-neutral-300 border border-neutral-600 hover:bg-white/5 hover:text-white transition pt-1 pb-1 pl-4 pr-4 rounded-lg"
+                        >
+                            Voir plus de formation
+                        </button>
                     </div>
                 </div>
             </div>
             <!--bloc2-->
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center bg-neutral-900 text-white">
                 <div
                     id="coursenew"
-                    class="flex flex-col items-center mt-8 w-64"
+                    class="flex flex-col items-center mt-8 w-72 md:w-full md:max-w-6xl"
                 >
                     <h3 class="mb-4">Les formations récentes</h3>
                     <div
-                        class="flex flex-col items-center md:flex-row md:items-stretch md:gap-36"
+                        class="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center md:gap-8"
                     >
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-amber-500 rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div id="course__body-comm" class="mt-4 mb-4">
+                            <div
+                                id="course__body-comm"
+                                class="flex flex-col mt-4 mb-4 md:min-h-40"
+                            >
                                 <h3>Mieux communiquer</h3>
                                 <p>Julien Martel | Coach en comm.</p>
                                 <div class="flex">
@@ -301,18 +331,23 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-amber-500 rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div id="course__body-emotions" class="mt-4 mb-4">
+                            <div
+                                id="course__body-emotions"
+                                class="flex flex-col mt-4 mb-4 md:min-h-40"
+                            >
                                 <h3>Maîtriser ses émotions</h3>
                                 <p>Amel Benali | Psy. du travail</p>
                                 <div class="flex">
@@ -343,18 +378,24 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-amber-500 rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div id="course__body-prob" class="mt-4 mb-4">
+                            <div
+                                id="course__body-prob"
+                                class="flex flex-col mt-4 mb-4 md:min-h-40"
+                            >
                                 <h3>Résoudre les problèmes</h3>
                                 <p>Thomas Rivière | Expert</p>
                                 <div class="flex">
@@ -385,18 +426,24 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+
+                        <div
+                            class="rounded-3xl bg-white/5 border border-white/10 p-4 md:w-64"
+                        >
                             <div
-                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-72"
+                                class="bg-[url(../assets/images/img-course.png)] items-center flex flex-col h-52 md:w-full md:bg-cover md:bg-center md:relative"
                             >
                                 <div
-                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-amber-500 rounded-2xl"
+                                    class="mt-48 ml-32 pl-2 pr-2 flex bg-white rounded-2xl md:absolute md:-bottom-2.5 md:right-3 md:mt-0 md:ml-0"
                                 >
-                                    <p>15,99 €</p>
-                                    <p class="line-through">60 €</p>
+                                    <p class="text-black">15,99 €</p>
+                                    <p class="text-black line-through">60 €</p>
                                 </div>
                             </div>
-                            <div id="course__body-positif" class="mt-4 mb-4">
+                            <div
+                                id="course__body-positif"
+                                class="flex flex-col mt-4 mb-4 md:min-h-40"
+                            >
                                 <h3>Leadership positif</h3>
                                 <p>Marc Nguyen | Consultant</p>
                                 <div class="flex">
@@ -425,17 +472,32 @@
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <button class="mt-4 mb-8">
+                        <button
+                            class="mt-4 mb-8 text-neutral-300 border border-neutral-600 hover:bg-white/5 hover:text-white transition pt-1 pb-1 pl-4 pr-4 rounded-lg"
+                        >
                             Voir plus de formation
                         </button>
                     </div>
                 </div>
             </div>
-            <h3 class="justify-self-center mb-4">AVIS CLIENTS</h3>
-            <div class="flex flex-col gap-4 md:flex-row">
-                <div class="flex flex-col items-center md:w-[50%]">
-                    <img src="resources/juliette.png" />
+            <div class="bg-neutral-900">
+                <h3 class="justify-self-center text-white pb-4">
+                    AVIS CLIENTS
+                </h3>
+            </div>
+            <div
+                class="flex flex-col gap-4 md:flex-row bg-neutral-900 text-white pb-4"
+            >
+                <div
+                    class="flex flex-col items-center ml-4 mr-4 md:w-[50%] rounded-3xl bg-white/5 border border-white/10 p-4 md:ml-8"
+                >
+                    <img
+                        src="resources/juliette.png"
+                        alt="cliente souriante blonde"
+                        class="rounded-[4rem]"
+                    />
                     <h4>Juliette</h4>
                     <div class="flex">
                         <img
@@ -468,8 +530,14 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col items-center md:w-[50%]">
-                    <img src="resources/camille.png" />
+                <div
+                    class="flex flex-col items-center ml-4 mr-4 md:w-[50%] rounded-3xl bg-white/5 border border-white/10 p-4 md:mr-8"
+                >
+                    <img
+                        src="resources/camille.png"
+                        alt="cliente souriante vu de profil, brune"
+                        class="rounded-[4rem]"
+                    />
                     <h4>Camille</h4>
                     <div class="flex">
                         <img
@@ -501,16 +569,20 @@
                     </p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div class="">
-                        <div>
+            <div class="md:flex md:p-8 bg-neutral-900 text-white pl-4 pr-4">
+                <div class="md:w-full md:flex md:justify-center gap-96">
+                    <div
+                        class="rounded-3xl bg-white/5 border border-white/10 md:pr-12 p-4"
+                    >
+                        <div
+                            class="md:flex md:flex-row md:items-center md:justify-around"
+                        >
                             <h3 class="justify-self-center mt-8 mb-8">
                                 les avantages Klivio
                             </h3>
                         </div>
                         <ul
-                            class="flex flex-col items-center ml-12 max-w-60 mb-8"
+                            class="flex flex-col items-center ml-12 max-w-60 md:w-full mb-8"
                         >
                             <li class="flex gap-6">
                                 <img
@@ -565,79 +637,110 @@
                             </li>
                         </ul>
                     </div>
-                    <div></div>
+                    <div class="hidden md:flex">
+                        <img
+                            src="/assets/images/advantages_desktop.svg"
+                            alt="image d'une employée"
+                        />
+                    </div>
+                    <div class="md:hidden p-8">
+                        <img
+                            src="/assets/images/advantages_mobile.png"
+                            alt="image d'une employée"
+                        />
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center mb-8 bg-green-500">
-                <h3 class="mb-4 mt-4">CRÉEZ VOS FORMATIONS</h3>
-                <div></div>
-                <div class="max-w-80 mb-8">
-                    <img
-                        src="resources/become-author.png"
-                        alt="Plan sur un bureau d'un employé prenant des notes sur son pc"
-                    />
-                    <ul class="flex flex-col gap-2 items-start mt-4">
-                        <h3 class="hidden">CRÉEZ VOS FORMATIONS AVEC KLIVIO</h3>
-                        <li class="flex gap-4 items-start">
+            <div
+                class="flex flex-col items-center pb-8 bg-neutral-900 text-white md:pl-8 md:pr-8"
+            >
+                <div class="rounded-3xl bg-white/5 border border-white/10 p-4">
+                    <div class="justify-self-center">
+                        <h3 class="mb-4 mt-4">CRÉEZ VOS FORMATIONS</h3>
+                    </div>
+                    <div class="max-w-80 mb-8 md:flex md:max-w-full">
+                        <div class="md:hidden">
                             <img
-                                src="assets/images/hand.svg"
-                                alt="icone d'une main"
+                                src="assets/images/owncourse_mobile.png"
+                                alt="Plan sur un bureau d'un employé prenant des notes sur son pc"
                             />
-                            <span
-                                >Commission unique, au pourcentage sur les
-                                ventes</span
-                            >
-                        </li>
+                        </div>
+                        <div class="hidden md:flex">
+                            <img
+                                src="assets/images/owncourse_desktop.jpg"
+                                alt="Plan sur un bureau d'un employé prenant des notes sur son pc"
+                            />
+                        </div>
+                        <ul
+                            class="flex flex-col gap-2 items-start mt-4 md:ml-8"
+                        >
+                            <li class="hidden">
+                                CRÉEZ VOS FORMATIONS AVEC KLIVIO
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <img
+                                    src="assets/images/hand.svg"
+                                    alt="icone d'une main"
+                                />
+                                <span
+                                    >Commission unique, au pourcentage sur les
+                                    ventes</span
+                                >
+                            </li>
 
-                        <li class="flex gap-4 items-start">
-                            <img
-                                src="assets/images/heart.svg"
-                                alt="icone d'un coeur"
-                            />
-                            <span>Mise en avant sur la plateforme</span>
-                        </li>
+                            <li class="flex gap-4 items-start">
+                                <img
+                                    src="assets/images/heart.svg"
+                                    alt="icone d'un coeur"
+                                />
+                                <span>Mise en avant sur la plateforme</span>
+                            </li>
 
-                        <li class="flex gap-4 items-start">
-                            <img
-                                src="assets/images/penwhite.svg"
-                                alt="icone d'un stylo"
-                            />
-                            <span
-                                >Contrôle total sur le cours : contenu,
-                                prix</span
-                            >
-                        </li>
+                            <li class="flex gap-4 items-start">
+                                <img
+                                    src="assets/images/penwhite.svg"
+                                    alt="icone d'un stylo"
+                                />
+                                <span
+                                    >Contrôle total sur le cours : contenu,
+                                    prix</span
+                                >
+                            </li>
 
-                        <li class="flex gap-4 items-start">
-                            <img
-                                src="assets/images/setting.svg"
-                                alt="icone d'un engrenage"
-                            />
-                            <span
-                                >Fonctionnalités avancées : espace commentaires,
-                                possibilité de créer des QCM, exercices, vidéos,
-                                téléchargement en PDF, suivi des statistiques
-                                des ventes, gestion de codes promos, gestion de
-                                la facturation, etc</span
-                            >
-                        </li>
+                            <li class="flex gap-4 items-start">
+                                <img
+                                    src="assets/images/setting.svg"
+                                    alt="icone d'un engrenage"
+                                />
+                                <span
+                                    >Fonctionnalités avancées : espace
+                                    commentaires, possibilité de créer des QCM,
+                                    exercices, vidéos, téléchargement en PDF,
+                                    suivi des statistiques des ventes, gestion
+                                    de codes promos, gestion de la facturation,
+                                    etc</span
+                                >
+                            </li>
 
-                        <li class="flex gap-4 items-start">
-                            <img
-                                src="assets/images/border.svg"
-                                alt="icon d'un portrait"
-                            />
-                            <span
-                                >Le professeur reste 100% propriétaire de sa
-                                formation et conserve tous ses droits
-                                d’auteur</span
-                            >
-                        </li>
-                    </ul>
+                            <li class="flex gap-4 items-start">
+                                <img
+                                    src="assets/images/border.svg"
+                                    alt="icon d'un portrait"
+                                />
+                                <span
+                                    >Le professeur reste 100% propriétaire de sa
+                                    formation et conserve tous ses droits
+                                    d’auteur</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="flex flex-col items-center pb-4">
+            <div class="md:flex">
+                <div
+                    class="flex flex-col items-center pb-4 md:w-[50%] bg-neutral-900 text-white"
+                >
                     <h3 class="pt-8 pb-8">À PROPOS DE KLIVIO</h3>
                     <p class="max-w-72">
                         Chez Klivio, nous défendons des valeurs fondamentales
@@ -656,63 +759,79 @@
                         pportunités d'apprentissage de qualité
                     </p>
                 </div>
-                <div class="flex justify-center pt-36 pb-36 bg-red-700 gap-8">
+                <div
+                    class="flex justify-center pt-36 pb-36 bg-neutral-900 gap-8 md:w-[50%]"
+                >
                     <img
                         src="resources/logo.png"
                         alt="Image du logo du site"
-                        class="max-w-48"
+                        class="max-w-48 md:w-auto md:h-[30%] md:mt-16"
                     />
                 </div>
             </div>
-            <div class="flex flex-col">
-                <h3 class="mt-8 pb-4 self-center">Nous contacter</h3>
+            <div
+                class="flex flex-col bg-neutral-900 text-white md:pb-4 pl-4 pr-4 pb-4"
+            >
+                <div
+                    class="rounded-3xl bg-white/5 border border-white/10 p-4 md:ml-96 md:mr-96"
+                >
+                    <h3 class="mt-8 pb-4 self-center md:justify-self-center">
+                        Nous contacter
+                    </h3>
 
-                <hr class="hidden" />
-                <form action="#" class="flex flex-col">
-                    <div class="ml-4 mr-4 flex flex-col">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Nom"
-                            class="bg-green-500 p-2"
-                        /><br />
+                    <hr class="hidden" />
+                    <form action="#" class="flex flex-col md:items-center">
+                        <div
+                            class="ml-4 mr-4 flex flex-col md:flex-row md:items-center md:justify-between md:gap-4"
+                        >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Nom"
+                                class="bg-neutral-800 border border-neutral-400 p-2"
+                            /><br />
 
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                class="bg-neutral-800 border border-neutral-400 p-2"
+                            />
+                        </div>
+                        <br />
+                        <textarea
+                            name="comment"
+                            form="usrform"
+                            placeholder="Votre message"
+                            class="h-36 bg-neutral-800 border border-neutral-400 mr-4 ml-4 p-2 md:w-[60%]"
+                        ></textarea>
+                        <br />
+                        <label for=""></label>
                         <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="Email"
-                            class="bg-green-500 p-2"
+                            type="submit"
+                            value="Envoyer"
+                            class="self-center pl-24 pr-24 bg-emerald-600 hover:bg-emerald-500 mb-7 pt-1 pb-1 rounded-xl"
                         />
-                    </div>
-                    <br />
-                    <textarea
-                        name="comment"
-                        form="usrform"
-                        placeholder="Votre message"
-                        class="h-36 bg-green-500 mr-4 ml-4 p-2"
-                    ></textarea>
-                    <br />
-                    <label for=""></label>
-                    <input
-                        type="submit"
-                        value="Envoyer"
-                        class="self-center pl-24 pr-24 bg-red-900 mb-7 pt-1 pb-1 rounded-xl"
-                    />
-                </form>
+                    </form>
+                </div>
             </div>
         </main>
-        <div class="bg-gradient-to-r from-pink-600 to-cyan-500 pt-8"></div>
-        <footer class="bg-red-700">
-            <div class="flex flex-col items-center pb-16 pt-16">
+        <div
+            class="hidden md:flex h-4 bg-gradient-to-r from-neutral-800 to-transparent"
+        ></div>
+        <footer class="bg-neutral-900 text-white">
+            <div class="flex flex-col items-center pb-16 pt-16 md:gap-4">
                 <img
                     src="resources/logo.png"
                     alt="Image du logo du site"
                     class="max-w-52 mt-8 mb-8"
                 />
-                <div class="flex flex-col">
-                    <ul class="flex flex-col items-center">
+                <div class="flex flex-col gap-4 md:flex-row md:gap-20">
+                    <ul
+                        class="flex flex-col items-center rounded-3xl bg-white/5 border border-white/10 p-4"
+                    >
                         <li class="mb-4">Mentions légales</li>
                         <div class="flex flex-col items-center gap-1">
                             <li>CGU</li>
@@ -721,7 +840,9 @@
                             <li>Contact</li>
                         </div>
                     </ul>
-                    <ul class="flex flex-col gap-4">
+                    <ul
+                        class="flex flex-col gap-4 rounded-3xl bg-white/5 border border-white/10 p-4"
+                    >
                         <li class="flex flex-col items-center mt-4">
                             Coordonnées
                         </li>
@@ -743,23 +864,34 @@
                         </div>
                     </ul>
                 </div>
-                <div class="hidden">
-                    <button href="idk yet" target="_blank">Connexion</button>
-                    <button href="idk yet" target="_blank">Inscription</button>
+                <div class="hidden md:flex md:gap-20 md:mt-12">
+                    <button
+                        class="text-neutral-300 border border-neutral-600 hover:bg-white/5 hover:text-white transition pt-1 pb-1 pl-4 pr-4 rounded-lg"
+                    >
+                        Connexion
+                    </button>
+                    <button
+                        class="text-neutral-300 border border-neutral-600 rounded-lg hover:bg-white/5 hover:text-white transition pt-1 pb-1 pl-4 pr-4"
+                    >
+                        Inscription
+                    </button>
                 </div>
             </div>
-            <div class="hidden">
-                <hr />
-                <div>
+
+            <div
+                class="hidden md:flex justify-center gap-[70rem] border-t-[2px] pb-12"
+            >
+                <div class="mt-5">
                     <ul>
                         <li>© Klivio - 2025</li>
                     </ul>
                 </div>
-                <ul>
-                    <li>Suivez - nous</li>
+
+                <ul class="flex mt-5 gap-2.5">
+                    <li class="mr-1">Suivez - nous</li>
                     <li>
                         <img
-                            src="assets/images/Social Icons.svg"
+                            src="assets/images/facebook.svg"
                             alt="icone de facebook"
                         />
                     </li>
@@ -771,13 +903,13 @@
                     </li>
                     <li>
                         <img
-                            src="assets/images/Social Icons (1).svg"
+                            src="assets/images/instagram.svg"
                             alt="icone de instagram"
                         />
                     </li>
                     <li>
                         <img
-                            src="assets/images/Vector (2).svg"
+                            src="assets/images/linkedin.svg"
                             alt="icone de linkedin"
                         />
                     </li>
