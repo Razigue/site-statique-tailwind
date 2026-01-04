@@ -287,9 +287,6 @@
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);
   }
-  .mr-0\.5 {
-    margin-right: calc(var(--spacing) * 0.5);
-  }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
@@ -328,6 +325,9 @@
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-9 {
+    margin-left: calc(var(--spacing) * 9);
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
@@ -400,9 +400,6 @@
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
-  }
-  .w-\[100vw\] {
-    width: 100vw;
   }
   .w-full {
     width: 100%;
@@ -676,9 +673,6 @@
   }
   .bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\.\.\/assets\/images\/hero_mobile\.png\'\)\] {
     background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('../assets/images/hero_mobile.png');
-  }
-  .bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\/assets\/images\/hero_mobile\.png\'\)\] {
-    background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('/assets/images/hero_mobile.png');
   }
   .bg-\[url\(\.\.\/assets\/images\/img-course\.png\)\] {
     background-image: url(../assets/images/img-course.png);
@@ -1013,11 +1007,6 @@
       }
     }
   }
-  .focus\:border-red-800 {
-    &:focus {
-      border-color: var(--color-red-800);
-    }
-  }
   .focus\:border-white {
     &:focus {
       border-color: var(--color-white);
@@ -1041,46 +1030,6 @@
   .md\:-bottom-2\.5 {
     @media (width >= 48rem) {
       bottom: calc(var(--spacing) * -2.5);
-    }
-  }
-  .md\:-bottom-2\/12 {
-    @media (width >= 48rem) {
-      bottom: calc(calc(2/12 * 100%) * -1);
-    }
-  }
-  .md\:-bottom-4 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * -4);
-    }
-  }
-  .md\:-bottom-7 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * -7);
-    }
-  }
-  .md\:bottom-0 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:bottom-0\.5 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 0.5);
-    }
-  }
-  .md\:bottom-3 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 3);
-    }
-  }
-  .md\:bottom-4 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:bottom-5 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 5);
     }
   }
   .md\:mt-0 {
@@ -1121,6 +1070,11 @@
   .md\:ml-8 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:ml-9 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 9);
     }
   }
   .md\:ml-96 {
@@ -1188,9 +1142,19 @@
       max-width: var(--container-6xl);
     }
   }
+  .md\:max-w-\[60\%\] {
+    @media (width >= 48rem) {
+      max-width: 60%;
+    }
+  }
   .md\:max-w-\[70\%\] {
     @media (width >= 48rem) {
       max-width: 70%;
+    }
+  }
+  .md\:max-w-\[75\%\] {
+    @media (width >= 48rem) {
+      max-width: 75%;
     }
   }
   .md\:max-w-\[80\%\] {
@@ -1201,6 +1165,11 @@
   .md\:max-w-full {
     @media (width >= 48rem) {
       max-width: 100%;
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
@@ -1283,14 +1252,36 @@
       justify-self: center;
     }
   }
+  .md\:rounded-3xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-3xl);
+    }
+  }
+  .md\:border {
+    @media (width >= 48rem) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .md\:border-white\/10 {
+    @media (width >= 48rem) {
+      border-color: color-mix(in srgb, #fff 10%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+  }
+  .md\:bg-white\/5 {
+    @media (width >= 48rem) {
+      background-color: color-mix(in srgb, #fff 5%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+      }
+    }
+  }
   .md\:bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\.\.\/assets\/images\/hero_desktop\.png\'\)\] {
     @media (width >= 48rem) {
       background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('../assets/images/hero_desktop.png');
-    }
-  }
-  .md\:bg-\[linear-gradient\(94\.01deg\,rgba\(2\,6\,23\,0\.85\)_3\.11\%\,rgba\(2\,6\,23\,0\.60\)_45\%\,rgba\(2\,6\,23\,0\.85\)_98\.45\%\)\,radial-gradient\(900px_circle_at_30\%_30\%\,rgba\(217\,70\,239\,0\.35\)\,transparent_55\%\)\,radial-gradient\(900px_circle_at_70\%_60\%\,rgba\(34\,211\,238\,0\.25\)\,transparent_55\%\)\,url\(\'\/assets\/images\/hero_desktop\.png\'\)\] {
-    @media (width >= 48rem) {
-      background-image: linear-gradient(94.01deg,rgba(2,6,23,0.85) 3.11%,rgba(2,6,23,0.60) 45%,rgba(2,6,23,0.85) 98.45%),radial-gradient(900px circle at 30% 30%,rgba(217,70,239,0.35),transparent 55%),radial-gradient(900px circle at 70% 60%,rgba(34,211,238,0.25),transparent 55%),url('/assets/images/hero_desktop.png');
     }
   }
   .md\:bg-cover {
@@ -1303,9 +1294,19 @@
       background-position: center;
     }
   }
+  .md\:p-4 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 4);
+    }
+  }
   .md\:p-8 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:pt-4 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 4);
     }
   }
   .md\:pr-8 {
@@ -1321,6 +1322,11 @@
   .md\:pb-4 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:pb-8 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 8);
     }
   }
   .md\:pl-8 {
