@@ -5,5 +5,5 @@
 - [HTML/Tailwind](https://github.com/Razigue/site-statique-tailwind)
 
 
-## 🙇 Author
+## Author
 - Github: [@Razigue](https://github.com/Razigue)
